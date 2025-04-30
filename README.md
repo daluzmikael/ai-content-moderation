@@ -69,6 +69,23 @@ Fine-tuned on cleaned tweet data
 3 epochs, batch size 16, AdamW optimizer
 
 
+## Preprocessing Details
+# Removed:
+
+URLs
+
+Retweet markers (RT)
+
+Emoji unicode numbers (e.g., 128128)
+
+# Preserved:
+
+@mentions to reflect targeting behavior
+
+" quotes to retain quoted speech
+
+Exclamation marks (!) for tone detection
+
 
 
 
