@@ -70,7 +70,7 @@ Fine-tuned on cleaned tweet data
 
 
 ## Preprocessing Details
-# Removed:
+### Removed:
 
 URLs
 
@@ -78,7 +78,7 @@ Retweet markers (RT)
 
 Emoji unicode numbers (e.g., 128128)
 
-# Preserved:
+### Preserved:
 
 @mentions to reflect targeting behavior
 
