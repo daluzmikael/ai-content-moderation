@@ -46,17 +46,26 @@ The project demonstrates proper data preprocessing, model training, performance 
 ## Dataset Used
 [Davidson Hate Speech and Offensive Language Dataset
 ](https://github.com/t-davidson/hate-speech-and-offensive-language)
+
 ~25,000 labeled tweets
+
 Class distribution:
+
 Hate Speech (5%)
+
 Offensive Language (66%)
+
 Neither (29%)
 
 
 ## Model Architecture
+
 Pretrained: bert-base-uncased (Hugging Face Transformers)
+
 Fine-tuned on cleaned tweet data
+
 3-class classification head
+
 3 epochs, batch size 16, AdamW optimizer
 
 
