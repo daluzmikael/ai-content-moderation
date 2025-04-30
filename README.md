@@ -33,6 +33,15 @@ The project demonstrates proper data preprocessing, model training, performance 
    python evaluate_model.py    # Evaluate model and generate metrics + confusion matrix
 
 
+## Model Performance (after cleaning improvements)
+
+| Metric | Score % |
+|-------------|---------|
+| `Accuracy` | 91.61 |
+| `Precision` | 91.28 |
+| `Recall` | 91.61 |
+| `F1 Score` | 91.43 |
+
 
 
 
