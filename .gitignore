@@ -5,18 +5,15 @@ __pycache__/
 *.pyc
 *.pyo
 
-# VS Code settings (if you use VS Code)
 .vscode/
 
-# MacOS specific (if ever using Mac)
+# MacOS specific
 .DS_Store
 
-# Ignore model weights to avoid huge push failures
 /models/bert-hatespeech/pytorch_model.bin
 /models/bert-hatespeech/model.safetensors
 /models/bert-hatespeech-new/pytorch_model.bin
 /models/bert-hatespeech-new/model.safetensors
 
-# (Keep tokenizer and config small files)
 
 
