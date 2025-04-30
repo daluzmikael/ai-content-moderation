@@ -32,6 +32,25 @@ The project demonstrates proper data preprocessing, model training, performance 
    python train_model.py       # Fine-tune BERT on training data
    python evaluate_model.py    # Evaluate model and generate metrics + confusion matrix
 
+---
+
+## Requirements
+
+transformers
+
+torch
+
+scikit-learn
+
+pandas
+
+matplotlib
+
+seaborn
+
+notebook
+
+---
 
 ## Model Performance (after cleaning improvements)
 
@@ -42,6 +61,7 @@ The project demonstrates proper data preprocessing, model training, performance 
 | `Recall` | 91.61 |
 | `F1 Score` | 91.43 |
 
+---
 
 ## Dataset Used
 [Davidson Hate Speech and Offensive Language Dataset
@@ -57,6 +77,7 @@ Offensive Language (66%)
 
 Neither (29%)
 
+---
 
 ## Model Architecture
 
@@ -68,6 +89,7 @@ Fine-tuned on cleaned tweet data
 
 3 epochs, batch size 16, AdamW optimizer
 
+---
 
 ## Preprocessing Details
 ### Removed:
@@ -85,6 +107,28 @@ Emoji unicode numbers (e.g., 128128)
 " quotes to retain quoted speech
 
 Exclamation marks (!) for tone detection
+
+----------------
+
+
+# Ethical Reflection
+## We considered ethical risks including:
+
+Potential bias learned from imbalanced language targeting specific groups
+
+False positives unfairly silencing benign content
+
+False negatives missing truly harmful tweets
+
+## Solutions proposed:
+
+Use balanced datasets
+
+Apply adversarial examples
+
+Use threshold tuning
+
+Implement human moderation for edge cases
 
 
 
