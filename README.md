@@ -9,7 +9,7 @@ The project demonstrates proper data preprocessing, model training, performance 
 
 | Folder/File | Purpose |
 |-------------|---------|
-| src/ | All Python scripts for each stage of the project (modularized) |
+| `src/` | All Python scripts for each stage of the project (modularized) |
 | `data/` | Cleaned and split datasets (train/test) |
 | `models/` | Fine-tuned BERT models and tokenizers |
 | `plots/` | Confusion matrix visualizations |
