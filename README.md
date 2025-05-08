@@ -183,7 +183,10 @@ Hate Speech (0), Offensive Language (1), and Neither (2).
 
 ### Hugging Face link:
 
-https://huggingface.co/docs/transformers/en/model_doc/bert
+
+[Hugging Face BERT
+]([https://github.com/t-davidson/hate-speech-and-offensive-language](https://huggingface.co/docs/transformers/en/model_doc/bert
+))
 
 ### To use the model:
 
