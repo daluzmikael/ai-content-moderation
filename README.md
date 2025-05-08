@@ -133,3 +133,73 @@ Implement human moderation for edge cases
 
 
 
+# BERT
+
+## About BERT
+
+BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based language model developed by Google in 2018. It was designed to understand the context of words based on their surroundings, which makes it especially effective for nuanced tasks like content moderation, sentiment analysis, and hate speech detection.
+
+### Training
+BERT is pretrained on a massive corpus before you fine-tune it. It learns deep language patterns through:
+
+ Masked Language Modeling (MLM)
+ 
+→ Random words are masked in a sentence, and BERT learns to predict them using the context around them (both left and right).
+Example:
+
+`"The cat sat on the [MASK]." → "mat"`
+
+Next Sentence Prediction (NSP)
+
+→ BERT is given two sentences and learns to predict whether the second one logically follows the first.
+This helps with understanding relationships between ideas and sentences.
+
+This pretraining was done on:
+
+English Wikipedia (~2.5B words)
+
+BookCorpus (800M words of fiction)
+
+So before we ever fine-tuned it, BERT already understood English grammar, word relationships, and general world knowledge.
+
+### Fine-Tuning in This Project
+
+In our project, we took the bert-base-uncased version, which has:
+
+12 Transformer layers
+
+110 million parameters
+
+WordPiece tokenizer (lowercased input, 30k vocab size)
+
+We fine-tuned it on ~25,000 labeled tweets to adapt it specifically to hate/offensive language detection.
+
+
+
+## Our usage of BERT
+
+We fine-tuned a `bert-base-uncased` model to classify tweets into three categories:
+Hate Speech (0), Offensive Language (1), and Neither (2).
+
+### Hugging Face link:
+
+https://huggingface.co/docs/transformers/en/model_doc/bert
+
+### To use the model:
+
+`from transformers import AutoTokenizer, BertForSequenceClassification`
+
+`tokenizer = AutoTokenizer.from_pretrained("your-username/bert-hatespeech")`
+`model = BertForSequenceClassification.from_pretrained("your-username/bert-hatespeech")`
+
+### Files include
+
+| File | Purpose |
+|-------------|---------|
+| `pytorch_model.bin` | Model weights |
+| `config.json` | Model architecture |
+| `tokenizer.json` | Tokenizer used for input processing |
+| `vocab.txt` | Vocabulary |
+| `nspecial_tokens_map.json` | Special token definitions |
+
+
