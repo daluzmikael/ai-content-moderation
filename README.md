@@ -130,7 +130,7 @@ Use threshold tuning
 
 Implement human moderation for edge cases
 
-
+---
 
 
 # BERT
@@ -156,9 +156,9 @@ This helps with understanding relationships between ideas and sentences.
 
 This pretraining was done on:
 
-English Wikipedia (~2.5B words)
+→ English Wikipedia (~2.5B words)
 
-BookCorpus (800M words of fiction)
+→ BookCorpus (800M words of fiction)
 
 So before we ever fine-tuned it, BERT already understood English grammar, word relationships, and general world knowledge.
 
